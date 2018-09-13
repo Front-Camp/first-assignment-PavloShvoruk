@@ -7,6 +7,7 @@
  */
 const getFlags = arr => {
   /* your logic here...*/
+  return arr.reduce(((a, b) => Object.assign(a,b)), {} );
 };
 
 export default getFlags;
