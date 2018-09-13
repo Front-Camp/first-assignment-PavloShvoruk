@@ -12,6 +12,11 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+    return arr.reduce((sum, nextVal) => {if (typeof nextVal === "number" && isFinite(nextVal)) {
+            return sum + nextVal; 
+        }
+        return sum;
+    }, 0);
 };
 
 export default sumElements;
