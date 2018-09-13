@@ -9,6 +9,8 @@
  */
 const truncate = (str, length = 0, replacer = '...') => {
   /* your logic here...*/
+    let truncated = str.slice(length);
+    return truncated.concat(replacer);
 };
 
 export default truncate;
